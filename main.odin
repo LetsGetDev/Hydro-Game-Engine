@@ -9,6 +9,7 @@ import "core:math"
 import "core:c"
 import "core:math/linalg/glsl"
 import "core"
+import "core:strings"
 
 //import opengl & glfw
 import gl "vendor:OpenGL"
@@ -39,16 +40,16 @@ main :: proc() {
 
     model_geometry , ok := core.import_obj("core/resources/switch_sketchfab.obj")
     model_tex:= core.load_texture("core/resources/switch.png",false)
-    model:= core.configure_mesh(model_geometry.vertices,model_geometry.indices,&core.default_fragment_shader_source,&core.default_vertex_shader_source,model_tex)
+    model:= core.configure_mesh(model_geometry.vertices,model_geometry.indices,"core/resources/Shaders/default.frag", "core/resources/Shaders/default.vert",model_tex)
 
     skybox_geometry , sky_ok := core.import_obj("core/resources/skybox_model/skybox_obj.obj")
     skybox_tex := core.load_texture("core/resources/skybox_model/Skybox.png",true)
-    skybox:= core.configure_mesh(skybox_geometry.vertices,skybox_geometry.indices,&core.default_fragment_shader_source,&core.default_vertex_shader_source,skybox_tex)
+    skybox:= core.configure_mesh(skybox_geometry.vertices,skybox_geometry.indices,"core/resources/Shaders/default.frag","core/resources/Shaders/default.vert",skybox_tex)
 
 
     gizmo_geometry, gizmo_ok:= core.import_obj("core/resources/gizmo_model/gizmo.obj")
     gizmo_tex:= core.load_texture("core/resources/gizmo_model/texture.png", false)
-    gizmo:= core.configure_mesh(gizmo_geometry.vertices,gizmo_geometry.indices,&core.default_fragment_shader_source,&core.default_vertex_shader_source, gizmo_tex)
+    gizmo:= core.configure_mesh(gizmo_geometry.vertices,gizmo_geometry.indices,"core/resources/Shaders/default.frag","core/resources/Shaders/default.vert", gizmo_tex)
 
 
     defer {
@@ -133,7 +134,6 @@ main :: proc() {
         
         glfw.SwapBuffers(window)
     }
-
 }
 
 

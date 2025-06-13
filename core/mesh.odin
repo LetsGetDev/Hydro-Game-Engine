@@ -22,7 +22,7 @@ mesh::struct{
 }
 
 
-configure_mesh::proc(vertices:[dynamic]f32, indices:[dynamic]u32, fragment:^cstring, Vertex:^cstring, texture_img:texture_data) -> mesh {
+configure_mesh::proc(vertices:[dynamic]f32, indices:[dynamic]u32, fragment:string, Vertex:string, texture_img:texture_data) -> mesh {
     // Crear VAO (Vertex Array Object)
     vao: u32
     gl.GenVertexArrays(1, &vao)
