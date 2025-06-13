@@ -120,13 +120,10 @@ main :: proc() {
         core.draw_mesh(skybox,&view,&projection)
         skybox.position = main_camera.camera_pos
         skybox.scale = 3.0
-        useFog_loc:= gl.GetUniformLocation(skybox.shader_program, "useFog")
-        gl.Uniform1i(useFog_loc,0)
 
 
         core.draw_mesh(gizmo,&view,&projection)
-        gizmo.scale = 0.4
-        gizmo.rotation.x += 10 * delta_time
+        gizmo.scale = 0.5
         
 
 
@@ -134,6 +131,7 @@ main :: proc() {
         
         glfw.SwapBuffers(window)
     }
+
 }
 
 
