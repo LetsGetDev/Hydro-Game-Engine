@@ -53,7 +53,6 @@ load_texture::proc(file_path:cstring,interpolation:bool)-> texture_data {
     gl.TexImage2D(gl.TEXTURE_2D,0, gl.RGBA,width,height,0, gl.RGBA, gl.UNSIGNED_BYTE, rawptr(data))
 
     gl.GenerateMipmap(gl.TEXTURE_2D)
-    gl.BindTexture(gl.TEXTURE_2D, 0)
 
     return texture_
 

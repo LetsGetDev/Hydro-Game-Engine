@@ -42,12 +42,16 @@ configure_mesh::proc(vertices:[dynamic]f32, indices:[dynamic]u32, fragment:strin
 
     // Configurar atributos de vértice
     // Atributo de posición (layout location = 0)
-    gl.VertexAttribPointer(0, 3, gl.FLOAT, gl.FALSE, 5 * size_of(f32), 0)
+    gl.VertexAttribPointer(0, 3, gl.FLOAT, gl.FALSE, 8 * size_of(f32), 0)
     gl.EnableVertexAttribArray(0)
     
     // Atributo de textura (layout location = 1)
-    gl.VertexAttribPointer(1, 2, gl.FLOAT, gl.FALSE, 5 * size_of(f32), 3 * size_of(f32))
+    gl.VertexAttribPointer(1, 2, gl.FLOAT, gl.FALSE, 8 * size_of(f32), 3 * size_of(f32))
     gl.EnableVertexAttribArray(1)
+
+    gl.VertexAttribPointer(2, 3, gl.FLOAT, gl.FALSE, 8 * size_of(f32), 5 * size_of(f32))
+    gl.EnableVertexAttribArray(2)
+    
 
 
     SHader_PRogram := create_shaderProgram(fragment, Vertex)
@@ -88,7 +92,7 @@ draw_mesh::proc(mesh_:mesh, view:^glsl.mat4, projection:^glsl.mat4){
 
     tex_loc:= gl.GetUniformLocation(mesh_.shader_program,"texture1")
     gl.Uniform1i(tex_loc,0)
-    gl.ActiveTexture(mesh_.tex_data.texture)
+    gl.ActiveTexture(gl.TEXTURE0)
     gl.BindTexture(gl.TEXTURE_2D, mesh_.tex_data.texture)
     
     gl.BindVertexArray(mesh_.Vao)
