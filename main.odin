@@ -54,7 +54,7 @@ main :: proc() {
 
     defer {
         core.cleanup_mesh(&model)
-        core.cleanup_mesh(&skybox)
+        //core.cleanup_mesh(&skybox)
         core.cleanup_mesh(&gizmo)
     }
 
@@ -114,7 +114,6 @@ main :: proc() {
         core.draw_mesh(model,&view,&projection)
         model.scale = 0.05
         model.pivot.xz = 10
-        model.rotation.x += 10 * delta_time
 
 
         core.draw_mesh(skybox,&view,&projection)

@@ -19,7 +19,7 @@ init_window::proc()-> glfw.WindowHandle{
 
 
     // Crear ventana
-    window := glfw.CreateWindow(800, 600, "Triángulo OpenGL en Odin", nil, nil)
+    window := glfw.CreateWindow(1920, 1080, "Triángulo OpenGL en Odin", nil, nil)
     if window == nil {
         fmt.println("Error al crear ventana GLFW")
         return nil
