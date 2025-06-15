@@ -18,7 +18,6 @@ mesh::struct{
     rotation:glsl.vec3,
     scale:glsl.vec3,
     pivot:glsl.vec3,
-
 }
 
 

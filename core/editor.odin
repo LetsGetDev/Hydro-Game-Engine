@@ -37,19 +37,9 @@ render_editor::proc(){
 	im.NewFrame()
 
 
-	items:cstring
-
-	current:c.int = 1
-	store:f32
 	if im.Begin("Propeties"){
-		im.Text("Select Object")
-		im.Text("//Position//")
-		im.InputFloat("X",&store)
-		im.InputFloat("Y",&store)
-		im.InputFloat("Z",&store)
 
 	}
-	
 	im.End()
 
     
