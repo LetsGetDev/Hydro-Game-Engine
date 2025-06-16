@@ -114,6 +114,7 @@ main :: proc() {
         core.draw_mesh(model,&view,&projection)
         model.scale = 0.05
         model.pivot.xz = 10
+        model.rotation.xz += 10 * delta_time
 
 
         core.draw_mesh(skybox,&view,&projection)
@@ -123,6 +124,7 @@ main :: proc() {
 
         core.draw_mesh(gizmo,&view,&projection)
         gizmo.scale = 0.5
+        gizmo.position.z = 3
         
 
 
