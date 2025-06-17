@@ -32,9 +32,6 @@ Hydro is a SUPER BASIC game engine created by me, Harol, just for fun. It’s wr
 2025-06-06 - got basic meshes working, all in one file.
 ![image alt](https://github.com/LetsGetDev/Hydro-Game-Engine/blob/b33e2a8b7cb7335ab021e1a476e16b13dac4b7d1/Screenshot%202025-06-06%20121944.png)
 
-2025-06-07 - I added DearImgui and managed to add rotations, posicition, and scales and added cameras and started working on the obj importer.
-
-
 2025-06-08 - I separated each Proc/func in a file and added obj loading and cameras.
 
 ![image alt](https://github.com/LetsGetDev/Hydro-Game-Engine/blob/4650ea21d25ba2d6ff17ecb810d89eb935c9351a/Screenshot%202025-06-08%20191238.png)
@@ -47,5 +44,12 @@ Hydro is a SUPER BASIC game engine created by me, Harol, just for fun. It’s wr
 2025-06-13 - Tried to add normals to the 3d models to add lighting but i accidentaly combined the vertex & normal atribute together, i was able to fix this error in 30 mins but if kind funny.
 
 ![image alt](https://github.com/LetsGetDev/Hydro-Game-Engine/blob/0e2f62f9b64b92e3905a5a103778b8e8b0139ae9/Screenshot%202025-06-13%20120549.png)
+
+2025-06-16 - this is the final product
+![Screenshot 2025-06-16 220919](https://github.com/user-attachments/assets/2664b748-8cc8-49f8-9773-cb7ea6d423b8)
+
+# Final
+- sorry for not adding more images and video, i forgot i had to do it but here is my youtube channel if you want to see my future proyects: https://www.youtube.com/@alkoxide-zero
+
 
 
