@@ -48,6 +48,9 @@ Hydro is a SUPER BASIC game engine created by me, Harol, just for fun. It’s wr
 2025-06-16 - this is the final product
 ![Screenshot 2025-06-16 220919](https://github.com/user-attachments/assets/2664b748-8cc8-49f8-9773-cb7ea6d423b8)
 
+and here is a video (the github doesnt support mp4 so you have to dowload it)
+https://github.com/LetsGetDev/Hydro-Game-Engine/blob/7f0dce9026eece1bb3562a2ab7b358d6ec25d1a5/Screen%20Recording%202025-06-16%20220958.mp4
+
 # Final
 - sorry for not adding more images and video, i forgot i had to do it but here is my youtube channel if you want to see my future proyects: https://www.youtube.com/@alkoxide-zero
 
