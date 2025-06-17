@@ -1,7 +1,11 @@
 # Hydro-Game-Engine
-Hydro is a game engine created by me, Harol, just for fun. It’s written in Odin and uses OpenGL. I developed this engine between 8th and 9th grade.
+Hydro is a SUPER BASIC game engine created by me, Harol, just for fun. It’s written in Odin and uses OpenGL. I developed this engine between 8th and 9th grade.
 
 Images of early develoment:
+
+2025-03-18 - I created the first version of this game engine by following a tutorial, I dint knew how it worked at the moment (alkoxide is my discord user name & this that can be found in the Odin lang official discord in #showcase in 18/03/2025 20:25
+
+![image alt](https://github.com/LetsGetDev/Hydro-Game-Engine/blob/0e2f62f9b64b92e3905a5a103778b8e8b0139ae9/discord%20ODIN%20LANG%20screenshot.png)
 
 2025-06-06 - got basic meshes working, all in one file
 ![image alt](https://github.com/LetsGetDev/Hydro-Game-Engine/blob/b33e2a8b7cb7335ab021e1a476e16b13dac4b7d1/Screenshot%202025-06-06%20121944.png)
@@ -13,5 +17,9 @@ Images of early develoment:
 2025-06-10 - added 3d models & tested it and cleaned the code
 
 ![image alt](https://github.com/LetsGetDev/Hydro-Game-Engine/blob/4650ea21d25ba2d6ff17ecb810d89eb935c9351a/Screenshot%202025-06-10%20175432.png)
+
+2025-06-13 - Tried to add normals to the 3d models to add lighting but i accidentaly combined the vertex & normal atribute together, i was able to fix this error in 30 mins but if kind funny
+
+![image alt](https://github.com/LetsGetDev/Hydro-Game-Engine/blob/0e2f62f9b64b92e3905a5a103778b8e8b0139ae9/Screenshot%202025-06-13%20120549.png)
 
 
