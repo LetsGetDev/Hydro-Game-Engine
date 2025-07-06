@@ -94,7 +94,7 @@ process_vertex :: proc(
     return result
 }
 
-import_obj :: proc(filename: string) -> (mesh: MeshData, success: bool) {
+ImportObj:: proc(filename: string) -> (mesh: MeshData, success: bool) {
     mesh = new_mesh_data()
     vertex_cache := make(map[string]u32)
     defer delete(vertex_cache)

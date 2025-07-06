@@ -11,7 +11,7 @@ texture_data::struct{
 }
 
 //solo texturas divicibles por 2 
-load_texture::proc(file_path:cstring,interpolation:bool)-> texture_data {
+LoadTexture::proc(file_path:cstring,interpolation:bool)-> texture_data {
     
     stbi.set_flip_vertically_on_load(1)
 
@@ -53,6 +53,8 @@ load_texture::proc(file_path:cstring,interpolation:bool)-> texture_data {
     gl.TexImage2D(gl.TEXTURE_2D,0, gl.RGBA,width,height,0, gl.RGBA, gl.UNSIGNED_BYTE, rawptr(data))
 
     gl.GenerateMipmap(gl.TEXTURE_2D)
+
+    texture_.success =  true
 
     return texture_
 

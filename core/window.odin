@@ -4,7 +4,7 @@ import "vendor:glfw"
 import gl "vendor:OpenGL"
 import "core:fmt"
 
-init_window::proc()-> glfw.WindowHandle{
+InitWindow::proc()-> glfw.WindowHandle{
     // Inicializar GLFW
     if ! cast(bool) glfw.Init() {
         // log error, exit
@@ -35,4 +35,18 @@ init_window::proc()-> glfw.WindowHandle{
     gl.Enable(gl.MULTISAMPLE)
 
     return window
+}
+
+
+EventsInit::proc(){
+    glfw.PollEvents()
+    gl.Clear(gl.COLOR_BUFFER_BIT)
+    gl.Clear(gl.DEPTH_BUFFER_BIT)
+    gl.Enable(gl.BLEND)
+    gl.BlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)
+    gl.Enable(gl.DEPTH_TEST)
+    gl.ClearColor(0.2, 0.3, 0.3, 1.0);
+    gl.Enable(gl.CULL_FACE)
+    gl.CullFace(gl.BACK)
+    gl.FrontFace(gl.CCW)
 }
